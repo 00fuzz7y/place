@@ -4,6 +4,10 @@ review
 python-interpreted language
 high-level
 """
+#print the current datetime
+import time
+print (time.strftime("%Y|%m|%d~{%H:%M}"))
+
 some_limit = 5
 condition = True #1
 #condition for
