@@ -4,16 +4,23 @@ review
 python-interpreted language
 high-level
 """
-#print the current datetime
-import time
-print (time.strftime("%Y|%m|%d~{%H:%M}"))
 
-some_limit = 5
+#print the current date
+import time
+import datetime
+
+print ("Time(s) since epoch: %s" %time.time())
+print ("Current datetime: " , datetime.datetime.now())
+print ("#day of Month year week#(day)# dayOfWeek: ")
+print(datetime.date.today().strftime("%j %d %B %Y %W %w %A"))
+print (time.strftime("%m|%d~{%H:%M}"))
+
+some_limit = 3
 condition = True #1
 #condition for
 #while loop
 while(condition<some_limit):
-    print("do something repetetive")
+    print("do something repetetive a couple times")
     condition+=1
 #for iterating though lists
 example_list = ["collection", "of", 'things'] #group of objects
@@ -50,14 +57,13 @@ def printList(some_list) :
 list_of_parameters = ["example", "parameters"]  
 printList(list_of_parameters)
 
-x = 4273 #grand scope
+x = 427300000 #grand scope
 #global?
 print(x)
 #this x is just a placeholder and the 
-for x in range(20, 22000,x):
+for x in range(20, 2200000000,x):
     print(x, end = ' ')
     print("local scope")
 #since we used x it changed
 print(x)
-
 
